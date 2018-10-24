@@ -10,15 +10,9 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 640px) {
 .container3 {
   padding: 0px 10px;
-}}
-
-@media (max-width: 640px) {
-.container3 {
-  padding: 0px 20px;
-}}
+}
 
 @media (min-width: 640px) {
 .container3-2 {
@@ -66,34 +60,50 @@ body {
   color: #4c4c4c;
   font-size: 0.8rem;
   line-height: 15px;
-  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  font-family: ""Hiragino Kaku Gothic ProN",游ゴシック", YuGothic, "メイリオ", Verdana,  Meiryo, sans-serif;
 }
 
+p.mss {
+   color: #000000;
+    font-size: 0.8rem;
+    margin: 30px 15px;
+}
 
 p.ms {
    color: #000000;
     font-size: 0.8rem;
-    margin: 30px 10px;
+    margin: 30px 15px;
 }
+
+ @media (max-width: 640px) {
+p.ms {
+   color: #000000;
+    font-size: 0.67rem;
+    margin: 20px 15px 10px 0px;
+}}
 
 
 p.ss {
-    color: #887f69;;
-    margin: 30px 0px;
+    color: #887f69;
 }
 
  @media (min-width: 640px) {
 p.sss {
-    color: #887f69;;
+    color: #887f69;
     font-size: 0.7rem;
 }}
 
  @media (max-width: 640px) {
 p.sss {
-    color: #887f69;;
+    color: #887f69;
     font-size: 1rem;
     line-height: 1.2rem;
 }}
+
+p.ssss {
+    color: #887f69;
+    font-size: 0.74rem;
+}
 
 p.s {
     color: #000000;
@@ -101,19 +111,33 @@ p.s {
     margin: 10px 0px;
 }
 
+p.s-22 {
+    color: #000000;
+    font-size: 0.8rem;
+    margin: 4px 0px;
+}
+
+p.ss2 {
+    color: #887f69;
+     font-size: 0.7rem;
+}
+
 
 @media (max-width: 640px) {
 p.ss {
-    font-size: 1rem;}}
+        font-size: 0.7rem;
+    margin: 0px 0px 80px 0px;
+}}
     
     @media (min-width: 640px) {
 p.ss {
-    font-size: 0.6rem;}}
+    font-size: 0.6rem;
+    margin: 30px 0px;
+}}
 
 
 p.s-f {
     color: #000000;
-    letter-spacing: 1px;
     line-height: 1.2rem;
 }
 
@@ -126,10 +150,10 @@ p.s-f {
 @media (max-width: 640px) {
 p.s-f {
     float: right;
-    font-size: 1.1rem;
+        font-size: 0.77rem;
     padding-left: 10px;
-    margin-bottom: 30px;
     padding-right: 10px;
+    margin-bottom: 10px;
 }}
 
 p.s-2 {
@@ -237,14 +261,29 @@ div {
     padding: 10px 0px 0px 0px;
 }
 
+@media (max-width: 640px) {
+.goods {
+    font-size: 0.67rem;
+}
+ .money {
+   font-size: 0.7rem;
+}}
+
 .item {
     margin: 0px 0px 10px 0px;
 }
 
+@media (min-width: 640px) {
 .title {
     padding: 30px 0px 30px 0px;
-}
+}}
 
+@media (max-width: 640px) {
+ .title {
+    padding: 20px 0px 20px 0px;
+}}
+   
+    
 .u-max-full{
     width: 100%;
 }
@@ -265,6 +304,7 @@ div {
     padding: 10px;
     display: flex;
     align-items: end;
+    width: 100%;
 }}
 
 .pad2 {
@@ -279,15 +319,17 @@ position:relative;
 margin-bottom:20px;
 }
 #sbox2{
-height: 28px;
-    /* padding: 0 10px; */
+    height: 28px;
+    padding: 0px 0px 0px 10px;
     position: absolute;
+    font-style: oblique;
     border: none;
-    left: 0;
+    left: 0px;
     top: 0;
     border-radius: 2px;
     outline: 0;
     background: #eee;
+    color: #b5b5b5;
     width: 100%;	
 }
 #sbtn2{
@@ -328,7 +370,6 @@ height: 28px;
 }
 .box2 {
     float: left;
-    width: calc((100% - 6px) / 3);
     box-sizing: border-box;
     padding: 12px;
     background: #ffffff;
@@ -337,8 +378,16 @@ height: 28px;
 
 @media (min-width: 640px) {
     .box2 {
-    width: calc((100% - 6px) / 3);}
-}
+    width: calc((100% - 6px) / 3);
+    padding: 10px;
+}}
+
+@media (max-width: 640px) {
+    .box2 {
+    padding: 10px;
+    width: 50%;
+}}
+
 
 .box3 {
     background-color: #887f69;
@@ -399,10 +448,7 @@ height: 28px;
 .box7-sp {display: none;}  }  
 
 @media (max-width: 640px) {
-.box7 {display: none;}
-.box7-sp {
-      padding: 10px;
-}  }  
+.box7 {display: none;}}
 
 .box8 {
       background-color: #f9f9f9;
@@ -454,7 +500,6 @@ float: left;
     background-color: #ddddff;
     max-width: 960px;
     margin: 0 auto;
-    padding: 0 0px;
 }
 
 
@@ -482,9 +527,17 @@ float: left;
 
 /* header
 ------------------------------------------------------------*/
-.row {
-  padding: 50px 0px;
-}
+
+@media (min-width: 640px) {
+    .row {
+  padding: 40px 0px 80px 0px;
+}}
+
+
+@media (max-width: 640px) {
+    .row {
+  padding: 20px 0px 15px 0px;
+}}
 
 .position
 {
@@ -494,7 +547,7 @@ float: left;
 
 .menu
 {
-  padding: 0px 5px;
+  padding: 0px 10px;
 }
 
 
@@ -566,17 +619,18 @@ list-style: none outside;
 @media (min-width: 640px) {
 .line {
     margin: 30px 0px;
+    height: 3px;
 }}
 
 @media (max-width: 640px) {
 .line {
     margin: 10px 0px;
     color:#e3e8cf;
+    height: 1px;
 }}
 
 .line {
     background-color: #e3e8cf;
-    height: 3px;
     border: none;
 }
 
@@ -686,8 +740,9 @@ input[type="checkbox"]:checked + label::after {
 .box5 {
     margin-bottom: 20px;}
    .side-max{
-    width:100%;
-    float:left; } 
+    width:45%;
+    float:left;
+    } 
 .pagetop{
     text-align: center;
     margin-top: 50px;
@@ -695,12 +750,20 @@ input[type="checkbox"]:checked + label::after {
     .add{
     display: none;}
     .left{
-    margin: auto;
-    }
+    margin-left: 100px;
+    width: 125px;
+    height: 30px;}
     .marg{
-    padding: 20px;
+    padding: 20px;}
+    .search{
+    display: none; }
+     .add2{
+    margin: auto;
+    text-align: center;
+    padding: 15px;}
+    .left2{
+    margin-left: 70px;
 }}
-
     
 @media (min-width: 640px) {
   .sp_position {
@@ -715,7 +778,14 @@ input[type="checkbox"]:checked + label::after {
     .price{
         width:55%;    }
     .left{
-    margin-left: 100px;
+    margin: auto;
+     width: 150px;
+    height: 40px;
+    }
+    .add2{
+    display: none;}
+    .left2{
+        margin: auto
     }
 } 
 
