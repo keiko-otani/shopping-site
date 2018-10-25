@@ -87,6 +87,11 @@ p.ss {
     color: #887f69;
 }
 
+p.menu_sp {
+    color: #fff;
+    letter-spacing : 1px;
+}
+
  @media (min-width: 640px) {
 p.sss {
     color: #887f69;
@@ -762,7 +767,9 @@ input[type="checkbox"]:checked + label::after {
     text-align: center;
     padding: 15px;}
     .left2{
-    margin-left: 70px;
+    margin-left: 70px;}
+  .sp_position {
+        display: flex;
 }}
     
 @media (min-width: 640px) {
@@ -792,4 +799,29 @@ input[type="checkbox"]:checked + label::after {
     
     
 
+.sp_navi_li{
+     width: 100%;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    /* border: 1px solid #fff; */
+    background: #ff6d77;
+    margin: 0;
+    padding: 0;
+    display: none;
+    z-index: 100;}
     
+.sp_navi_li li{
+    list-style: none;
+    margin: 0;
+    text-align: left;
+    padding: 0px 20px;
+    width: 80%;}
+
+.sp_navi_li a{
+          display: block;
+    padding: 16px 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    text-decoration: none;
+    width: 100%;} 
